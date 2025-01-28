@@ -14,7 +14,7 @@ type Perfume = {
 
 export default async function Home() {
   try {
-    const res = await fetch("http://localhost:3000/api/perfume", {
+    const res = await fetch("https://main.d1h822f25eyiah.amplifyapp.com/api/perfume", {
       cache: "no-store", // Asegura que siempre obtengas datos actualizados
     });
 

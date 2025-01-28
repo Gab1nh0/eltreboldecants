@@ -4,7 +4,7 @@ generator client {
 
 datasource db {
   provider = "mysql"
-  url      = env("mysql://admin:12345678@tienda.cjckwy8q651c.us-east-1.rds.amazonaws.com:3306/tienda")
+  url      = env("DATABASE_URL")
 }
 
 model perfume {
