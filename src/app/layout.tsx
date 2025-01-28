@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist_Mono, Raleway } from "next/font/google";
 import "./globals.css";
+import Navbar from "./components/navbar";
 
-const geistSans = Geist({
+const geistSans = Raleway({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
@@ -25,6 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <Navbar></Navbar>
         {children}
       </body>
     </html>
