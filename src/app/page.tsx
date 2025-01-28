@@ -4,6 +4,7 @@ import PerfumeList from "./components/componente";
 
 type Perfume = {
   id: number;
+  house:string;
   name: string;
   description: string;
   price: number;
